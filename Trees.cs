@@ -12,7 +12,31 @@ namespace SkillAlgorithms
         {
             root = null;
         }
-
+        public void Add(Node v, int x)
+        {
+            if (v == null)
+            {
+                return;
+            }
+            if (x < v.x)
+            {
+                if (v.l == null)
+                {
+                    v.l = new Node(x, v);
+                    return;
+                }
+                Add(v.l, x);
+            }
+            else
+            {
+                if (v.r == null)
+                {
+                    v.r = new Node(x, v);
+                    return;
+                }
+                Add(v.r, x);
+            }
+        }
         public void Add(int x)
         {
             if (root == null)
