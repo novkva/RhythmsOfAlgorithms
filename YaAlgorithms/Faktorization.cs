@@ -27,5 +27,3 @@ namespace YaAlgorithms
         }
     }
 }
-
-//comment
