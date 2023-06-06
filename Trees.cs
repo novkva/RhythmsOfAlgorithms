@@ -81,7 +81,8 @@ namespace SkillAlgorithms
             else
             {
                 Node nxt = t.r;
-                while (nxt.l != null){
+                while (nxt.l != null)
+                {
                     nxt = nxt.l;
                 }
                 t.x = nxt.x;
@@ -89,7 +90,8 @@ namespace SkillAlgorithms
             }
         }
 
-        public Node Find(int x){
+        public Node Find(int x)
+        {
             return Find(root, x);
         }
     }
